@@ -5,8 +5,8 @@ import {
 
 const initialState = {
   posts: [],
-  defaultLocation: 'idle',
-  userLocation: 'idle',
+  defaultLoading: 'idle',
+  geoLoading: 'idle',
   error: null,
 };
 
@@ -15,26 +15,26 @@ const posts = (state = initialState, action) => {
     case LOAD_DEFAULT_LOCATION:
       return {
         ...state,
-        posts: action.payload,
-        defaultLocation: 'completed',
+        posts: action.payload.posts,
+        defaultLoading: 'completed',
         error: null,
       };
     case LOAD_USER_LOCATION:
       return {
         ...state,
-        posts: action.payload,
-        userLocation: 'completed',
+        posts: action.payload.posts,
+        geoLoading: 'completed',
         error: null,
       };
     case LOAD_ERROR: {
       const { error, from } = action.payload;
-      let { defaultLocation, userLocation } = state;
-      if (from === 'london') { defaultLocation = 'failed'; }
-      if (from === 'geo') { userLocation = 'failed'; }
+      let { defaultLoading, geoLoading } = state;
+      if (from === 'london') { defaultLoading = 'failed'; }
+      if (from === 'geo') { geoLoading = 'failed'; }
       return {
         ...state,
-        defaultLocation,
-        userLocation,
+        defaultLoading,
+        geoLoading,
         error,
       };
     }
