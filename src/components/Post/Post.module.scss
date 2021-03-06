@@ -1,0 +1,21 @@
+.post {
+  position: relative;
+}
+
+.post a {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 200;
+}
+
+.post span {
+  display: block;
+}
+
+.post h3,
+.post p {
+  text-transform: capitalize;
+}
