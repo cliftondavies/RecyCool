@@ -1,0 +1,22 @@
+.items header {
+  height: 117px;
+  background: url('../../assets/geometric-map.jpg') no-repeat center bottom/100%;
+}
+
+.items > main > section {
+  padding: 30px 100px 50px;
+}
+
+.heading {
+  margin-bottom: 25px;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.heading::after {
+  content: "";
+  display: block;
+  margin-top: 25px;
+  width: 5%;
+  border: 1px solid #000;
+}

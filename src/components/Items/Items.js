@@ -5,6 +5,7 @@ import CategoryFilter from '../CategoryFilter/CategoryFilter';
 import PostList from '../PostList/PostList';
 import Item from '../Item/Item';
 import { changeFilter } from '../../redux/actions';
+import styles from './Items.module.scss';
 
 const Items = ({ posts, postFilter, changeFilter }) => {
   const { path } = useRouteMatch();
@@ -16,11 +17,13 @@ const Items = ({ posts, postFilter, changeFilter }) => {
   return (
     <Switch>
       <Route exact path={path}>
-        <div>
+        <div className={styles.items}>
           <header />
 
           <main>
             <section>
+              <h2 className={styles.heading}>Items</h2>
+
               <CategoryFilter filterEvent={handleFilterChange} filterState={postFilter} />
 
               <PostList postType={postFilter} />
