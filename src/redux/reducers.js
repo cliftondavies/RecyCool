@@ -3,14 +3,14 @@ import {
   LOAD_DEFAULT_LOCATION, LOAD_USER_LOCATION, LOAD_ERROR, CHANGE_FILTER,
 } from './actions';
 
-const initialState = {
+export const initialState = {
   posts: [],
   defaultLoading: 'idle',
   geoLoading: 'idle',
   error: null,
 };
 
-const posts = (state = initialState, action) => {
+export const posts = (state = initialState, action) => {
   switch (action.type) {
     case LOAD_DEFAULT_LOCATION:
       return {
@@ -43,7 +43,7 @@ const posts = (state = initialState, action) => {
   }
 };
 
-const postFilter = (state = 'offer', action) => {
+export const postFilter = (state = 'offer', action) => {
   switch (action.type) {
     case CHANGE_FILTER:
       return action.payload.filter;
