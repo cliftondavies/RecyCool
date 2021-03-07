@@ -5,7 +5,7 @@ import styles from './Item.module.scss';
 
 const Item = ({ item }) => {
   const { title, content, type } = item;
-  const photo = (item.photos) ? item.photos[0].thumbnail : null;
+  const photo = (item.photos) ? item.photos[0].url : null;
   const editedContent = content.replace(/\s+http.+/g, '.');
   const editedTitle = title.replace(/\(.*/gm, '');
 
