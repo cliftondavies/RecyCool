@@ -1,4 +1,6 @@
+import { Link } from 'react-router-dom';
 import PostList from '../PostList/PostList';
+import styles from './Home.module.scss';
 
 const Home = () => {
   const createSection = (sectionName, postType) => (
@@ -9,20 +11,24 @@ const Home = () => {
       </h2>
 
       <PostList postType={postType} limited />
+
+      <div className={styles.more}>
+        <Link to="/items">See more</Link>
+      </div>
     </section>
   );
 
   return (
     <div>
-      <header>
+      <header className={styles.header}>
         <h1>
-          Welcome to a a world where
+          Welcome to a world where
           <br />
           everything is free.
         </h1>
       </header>
 
-      <main>
+      <main className={styles.main}>
         {createSection('Offered', 'offer')}
         {createSection('Wanted', 'wanted')}
       </main>
