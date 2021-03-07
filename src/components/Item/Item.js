@@ -8,26 +8,27 @@ const Item = ({ item }) => {
   const photo = (item.photos) ? item.photos[0].url : null;
   const editedContent = content.replace(/\s+http.+/g, '.');
   const editedTitle = title.replace(/\(.*/gm, '');
+  const itemClass = (type === 'offer') ? styles.offeritem : styles.wanteditem;
 
   return (
-    <div>
+    <div className={styles.item}>
       <header />
 
       <main>
-        <section className={styles.item}>
+        <section>
           <h2>{editedTitle}</h2>
 
-          <div>
+          <div className={itemClass}>
             {type === 'offer' && <img src={photo || image} alt="item" />}
 
             <div>
-              <span>
-                {`Posted by ${faker.name.findName()}`}
-              </span>
-
               <h3>Description</h3>
 
               <p>{editedContent}</p>
+
+              <span>
+                {`Posted by ${faker.name.findName()}`}
+              </span>
             </div>
           </div>
         </section>
