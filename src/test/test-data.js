@@ -28,8 +28,16 @@ export const response = () => ({
   end_index: 1,
 });
 
-export const state = ({ posts }) => ({
+export const data = ({ posts }) => posts;
+
+export const initialState = {
   posts: {
-    posts,
+    posts: [],
   },
-});
+};
+
+export const loadedState = {
+  posts: {
+    posts: data(response()),
+  },
+};
