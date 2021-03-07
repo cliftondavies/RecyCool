@@ -1,0 +1,22 @@
+.about {
+  height: calc(100vh - 58px);
+}
+
+.about header {
+  height: 20%;
+  background: url('../../assets/geometric-map.jpg') no-repeat center bottom/100%;
+}
+
+.about main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 80%;
+}
+
+.about p {
+  padding: 0 25px;
+  font-size: 32px;
+  line-height: 1.5;
+  text-align: center;
+}
