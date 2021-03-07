@@ -4,11 +4,13 @@ import PropTypes from 'prop-types';
 import Post from '../Post/Post';
 import filterPostsByCategory from '../../redux/filters';
 import { getLondonPosts, getUserCoords } from '../../api/api';
+import styles from './PostList.module.scss';
 
 const PostList = ({
   dispatch, postType, limited,
 }) => {
   const { defaultLoading, geoLoading, error } = useSelector(state => state.posts);
+  const postlistClass = (postType === 'offer') ? styles.offerlist : styles.wantedlist;
   let posts = useSelector(state => filterPostsByCategory(state, postType));
   posts = (limited) ? posts.splice(0, 6) : posts;
 
@@ -21,7 +23,7 @@ const PostList = ({
   }, [defaultLoading, geoLoading, dispatch]);
 
   return (
-    <div>
+    <div className={postlistClass}>
       {(posts.length > 0) ? posts.map(post => (
         <Post post={post} postType={postType} key={post.post_id} />
       )) : <span>{error}</span>}
