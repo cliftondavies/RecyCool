@@ -1,8 +1,9 @@
 import PropTypes from 'prop-types';
+import styles from './CategoryFilter.module.scss';
 
 const CategoryFilter = ({ filterEvent, filterState }) => (
-  <label htmlFor="filter">
-    CATEGORIES
+  <label htmlFor="filter" className={styles.filter}>
+    Filter by item category
     <select name="filter" value={filterState} id="filter" onChange={e => filterEvent(e.target.value)} required>
       <option value="offer">Offer</option>
       <option value="wanted">Wanted</option>
