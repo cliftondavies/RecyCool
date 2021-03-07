@@ -41,3 +41,9 @@ export const loadedState = {
     posts: data(response()),
   },
 };
+
+export const fakeAction = () => (
+  {
+    type: 'FAKE_ACTION',
+  }
+);
