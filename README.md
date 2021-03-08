@@ -6,7 +6,7 @@
 
 # RecyCool
 
-> Freecycling is a worldwide sharing movement that reduces waste, saves precious resources and eases the burden on landfills while enabling our members to benefit from the strength of a larger community. RecyCool is a web app with the same mission. It builds on top of the Trash Nothing API - a popular online freecycle community.
+> Freecycling is a worldwide sharing movement that reduces waste, saves precious resources and eases the burden on landfills while enabling members to benefit from the strength of a larger community. RecyCool is a web app with the same mission. It builds on top of the Trash Nothing API - a popular online freecycle community.
 
 ![screenshot](recycool.png)
 
