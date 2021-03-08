@@ -12,7 +12,7 @@ const PostList = ({
   const { defaultLoading, geoLoading, error } = useSelector(state => state.posts);
   const postlistClass = (postType === 'offer') ? styles.offerlist : styles.wantedlist;
   let posts = useSelector(state => filterPostsByCategory(state, postType));
-  posts = (limited) ? posts.splice(0, 6) : posts;
+  if (posts && limited) { posts = posts.splice(0, 6); }
 
   useEffect(() => {
     if (defaultLoading === 'idle') {
@@ -24,7 +24,7 @@ const PostList = ({
 
   return (
     <div className={postlistClass}>
-      {(posts.length > 0) ? posts.map(post => (
+      {(posts && posts.length > 0) ? posts.map(post => (
         <Post post={post} postType={postType} key={post.post_id} />
       )) : <span>{error}</span>}
     </div>
