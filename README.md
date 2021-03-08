@@ -70,6 +70,12 @@ Install packages:
 npm install
 ```
 
+Run tests:
+
+```javascript
+npm test
+```
+
 ### Local Usage
 
 #### In console
