@@ -1,0 +1,11 @@
+.offerlist {
+  display: grid;
+  padding: 0 60px;
+  grid-gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  margin-bottom: 25px;
+}
+
+.wantedlist {
+  padding: 0 60px;
+}
