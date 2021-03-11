@@ -14,8 +14,6 @@
 
 [Live Demo Link](https://recycool.netlify.app/)
 
-[Video Presentation](https://drive.google.com/file/d/1W758uB5XpXvndNfF2mSZf9c98ivxNr1w/view?usp=sharing)
-
 ## MVP Features
 
 The app features four main pages, enabling navigation to home, about, a list of items and a single item. Geolocation has also been implemented to allow users to view items within 10 KM of their current location.
