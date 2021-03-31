@@ -8,6 +8,11 @@ const WantedPost = ({ id, content }) => {
   const editedContent = content.replace(/\s+http.+/g, '.');
   const path = '/items';
 
+  const location = {
+    pathname: `${path}/${id}`,
+    state: { wanted: true },
+  };
+
   const dayText = amountOfDays => {
     let dayText;
 
@@ -20,7 +25,7 @@ const WantedPost = ({ id, content }) => {
 
   return (
     <article className={styles.wanted}>
-      <Link to={`${path}/${id}`} />
+      <Link to={location} />
 
       <h3>
         {`${faker.name.findName()} `}

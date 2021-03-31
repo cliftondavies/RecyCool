@@ -8,6 +8,11 @@ const OfferPost = ({ id, thumbnail, title }) => {
   const editedTitle = title.replace(/\(.*/gm, '');
   const path = '/items';
 
+  const location = {
+    pathname: `${path}/${id}`,
+    state: { offer: true },
+  };
+
   const dayText = amountOfDays => {
     let dayText;
 
@@ -20,7 +25,7 @@ const OfferPost = ({ id, thumbnail, title }) => {
 
   return (
     <article className={styles.offer}>
-      <Link to={`${path}/${id}`} />
+      <Link to={location} />
 
       <img src={thumbnail || image} width="250" height="250" alt="thumbnail" />
 
