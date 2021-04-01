@@ -16,7 +16,7 @@
 
 ## MVP Features
 
-The app features four main pages, enabling navigation to home, about, a list of items and a single item. Geolocation has also been implemented to allow users to view items within 10 KM of their current location.
+The app features three main pages: Home, About, and Items. Each item can be viewed separately as a nested page. Items can be filtered and geolocation has been implemented to allow users to view items within 10 KM of their current location.
 
 ## :toolbox: Tools & Technologies Used
 
