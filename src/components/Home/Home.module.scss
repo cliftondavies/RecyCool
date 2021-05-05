@@ -1,0 +1,52 @@
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70vh;
+  font-size: 40px;
+  font-weight: 900;
+  background: url('../../assets/geometric-map.jpg') no-repeat center/100%;
+  opacity: 0.9;
+  color: #fff;
+}
+
+.header h1 {
+  line-height: 1.25;
+  letter-spacing: 0.08em;
+}
+
+.main section {
+  padding: 30px 100px 50px;
+}
+
+.main section:last-child {
+  background: rgba(220, 220, 212, 0.8);
+}
+
+.main h2 {
+  margin-bottom: 25px;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.main h2::after {
+  content: "";
+  display: block;
+  margin-top: 25px;
+  width: 5%;
+  border: 1px solid #000;
+}
+
+.more {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 60px;
+}
+
+.more a {
+  border-radius: 10px;
+  padding: 10px;
+  text-decoration: none;
+  background: #86be4b;
+  color: #fff;
+}

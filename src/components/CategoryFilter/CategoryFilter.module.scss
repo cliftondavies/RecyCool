@@ -1,0 +1,22 @@
+.filter {
+  display: block;
+  margin-bottom: 10px;
+  padding-right: 60px;
+  text-align: right;
+}
+
+.filter,
+.filter select,
+.filter option {
+  opacity: 0.8;
+  font-size: 13px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 1.9px;
+}
+
+.filter select {
+  margin-left: 5px;
+}

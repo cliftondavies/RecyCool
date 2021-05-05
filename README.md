@@ -1,70 +1,116 @@
-# Getting Started with Create React App
+[![Netlify Status](https://api.netlify.com/api/v1/badges/496eb331-3056-466e-af83-895b115d5b59/deploy-status)](https://app.netlify.com/sites/recycool/deploys)
+[![MIT license](https://img.shields.io/badge/License-MIT-blue.svg)](https://lbesson.mit-license.org/)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
+[![Open Source Love png1](https://badges.frapsoft.com/os/v1/open-source.png?v=103)](https://github.com/ellerbrock/open-source-badges/)
+![Tweeting](https://img.shields.io/twitter/url/http/shields.io.svg?style=social)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# RecyCool
 
-## Available Scripts
+> Freecycling is a worldwide sharing movement that reduces waste, saves precious resources and eases the burden on landfills while enabling members to benefit from the strength of a larger community. RecyCool is a web app with the same mission. It builds on top of the Trash Nothing API - a popular online freecycle community.
 
-In the project directory, you can run:
+![screenshot](recycool.png)
 
-### `npm start`
+## :tv: Media
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+[Live Demo Link](https://recycool.netlify.app/)
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## MVP Features
 
-### `npm test`
+The app features three main pages: Home, About, and Items. Each item can be viewed separately as a nested page. Items can be filtered and geolocation has been implemented to allow users to view items within 10 KM of their current location.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## :toolbox: Tools & Technologies Used
 
-### `npm run build`
+### Built with
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- HTML5
+- CSS3
+- SCSS
+- JavaScript ES6
+- React 17.0.1
+- Redux >4.0.5
+- Jest v26.6
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## :rocket: Getting Started
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+To get a local copy up and running follow these simple example steps.
 
-### `npm run eject`
+### Prerequisites
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+Install [npm](https://www.npmjs.com/get-npm) or [Yarn](https://yarnpkg.com/cli/install)
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Install [Node.js](https://nodejs.org/en/download/)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+### Set up
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+Clone repo into your local environment:
 
-## Learn More
+Clone with SSH
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+```git
+git clone git@github.com:cliftondavies/RecyCool.git
+```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Clone with HTTPS
 
-### Code Splitting
+```git
+git clone https://github.com/cliftondavies/RecyCool.git
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Open project directory
 
-### Analyzing the Bundle Size
+```bash
+cd [your-directory-name]
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Install packages:
 
-### Making a Progressive Web App
+```javascript
+npm install
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Run tests:
 
-### Advanced Configuration
+```javascript
+npm test
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+### Local Usage
 
-### Deployment
+#### In console
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+```javascript
+npm start
+```
 
-### `npm run build` fails to minify
+#### In Browser
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Visit `http://localhost:3000/`.
+
+## Author
+
+👤 **Clifton Davies**
+
+- Github: [@githubhandle](https://github.com/cliftondavies)
+- Twitter: [@twitterhandle](https://twitter.com/cliftonaedavies)
+- Linkedin: [linkedin](https://www.linkedin.com/in/clifton-davies-mbcs/)
+
+## 🤝 Contributing
+
+Contributions, issues and feature requests are welcome!
+
+## Show your support
+
+Give a ⭐️ if you like this project!
+
+## Acknowledgements
+
+- [create-react-app](https://github.com/facebook/create-react-app)
+- [Heroku buildpack for create-react-app](https://github.com/mars/create-react-app-buildpack)
+- [Design inspiration](https://www.behance.net/gallery/54864337/Freecycle-redesign?tracking_source=search_projects_recommended%7CSitemap)
+- [Geometric map image](https://unsplash.com/photos/6bXvYyAYVrE)
+- [no image placeholder](https://commons.wikimedia.org/wiki/File:No-Image-Placeholder.svg)
+
+## 📝 Copyright & License
+
+Copyright (c) 2021 Clifton Davies.
+This project is licensed under [MIT](https://opensource.org/licenses/MIT). See LICENSE file for details.
