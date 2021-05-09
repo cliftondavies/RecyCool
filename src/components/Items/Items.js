@@ -18,7 +18,7 @@ const Items = ({ posts, postFilter, changeFilter }) => {
     <Switch>
       <Route exact path={path}>
         <div className={styles.items}>
-          <header />
+          <header id="header" />
 
           <main>
             <section>

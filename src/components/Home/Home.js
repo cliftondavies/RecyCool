@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom';
+import { HashLink as Link } from 'react-router-hash-link';
 import PostList from '../PostList/PostList';
 import styles from './Home.module.scss';
 
@@ -13,7 +13,7 @@ const Home = () => {
       <PostList postType={postType} limited />
 
       <div className={styles.more}>
-        <Link to="/items">See more</Link>
+        <Link to="/items#header">See more</Link>
       </div>
     </section>
   );
