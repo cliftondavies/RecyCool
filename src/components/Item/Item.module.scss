@@ -1,6 +1,14 @@
+.item {
+  min-height: calc(100vh - 58.5px);
+}
+
 .item header {
-  height: 117px;
+  height: 182px;
   background: url('../../assets/geometric-map.jpg') no-repeat center bottom/100%;
+}
+
+.item main {
+  height: 80%;
 }
 
 .item section {
@@ -33,11 +41,42 @@
   margin-right: 20px;
 }
 
+@media screen and (max-width: 1024px) {
+  .offeritem {
+    flex-direction: column;
+  }
+
+  .offeritem img {
+    border-radius: 15px;
+    margin-right: 0;
+    margin-bottom: 20px;
+    width: 100%;
+  }
+}
+
 .offeritem div {
   border-radius: 15px;
   padding: 25px;
   background: #2d8e4d;
   color: #fff;
+}
+
+@media screen and (max-width: 425px) {
+  .item header {
+    height: 117px;
+  }
+
+  .item section {
+    padding: 25px 15px 30px;
+  }
+
+  .offeritem {
+    padding: 0;
+  }
+
+  .offeritem div {
+    padding: 15px;
+  }
 }
 
 .offeritem h3 {

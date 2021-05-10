@@ -5,6 +5,12 @@
   text-align: right;
 }
 
+@media screen and (max-width: 425px) {
+  .filter {
+    padding-right: 10px;
+  }
+}
+
 .filter,
 .filter select,
 .filter option {

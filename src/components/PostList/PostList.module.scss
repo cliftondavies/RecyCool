@@ -9,3 +9,17 @@
 .wantedlist {
   padding: 0 60px;
 }
+
+@media screen and (max-width: 425px) {
+  .offerlist,
+  .wantedlist {
+    padding: 0 10px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .offerlist,
+  .wantedlist {
+    padding: 0 5px;
+  }
+}

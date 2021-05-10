@@ -1,5 +1,5 @@
 .items header {
-  height: 117px;
+  height: 182px;
   background: url('../../assets/geometric-map.jpg') no-repeat center bottom/100%;
 }
 
@@ -19,4 +19,29 @@
   margin-top: 25px;
   width: 5%;
   border: 1px solid #000;
+}
+
+@media screen and (max-width: 425px) {
+  .items header {
+    height: 80px;
+  }
+
+  .items > main > section {
+    padding: 20px 10px;
+  }
+
+  .heading {
+    margin-bottom: 15px;
+    padding-left: 10px;
+  }
+
+  .heading::after {
+    margin-top: 15px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .items > main > section {
+    padding: 20px 5px;
+  }
 }

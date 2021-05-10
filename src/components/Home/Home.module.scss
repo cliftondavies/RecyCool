@@ -15,6 +15,12 @@
   letter-spacing: 0.08em;
 }
 
+@media screen and (max-width: 768px) {
+  .header h1 {
+    font-size: 25px;
+  }
+}
+
 .main section {
   padding: 30px 100px 50px;
 }
@@ -41,6 +47,48 @@
   display: flex;
   justify-content: flex-end;
   padding-right: 60px;
+}
+
+@media screen and (max-width: 425px) {
+  .header {
+    height: 41vh;
+  }
+
+  .header h1 {
+    padding-top: 25px;
+    font-size: 18px;
+  }
+
+  .main section {
+    padding: 20px 10px 25px;
+  }
+
+  .main h2 {
+    margin-bottom: 15px;
+    padding-left: 10px;
+  }
+
+  .main h2::after {
+    margin-top: 15px;
+  }
+
+  .more {
+    padding-right: 10px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .header {
+    height: 35vh;
+  }
+
+  .header h1 {
+    font-size: 15px;
+  }
+
+  .main section {
+    padding: 20px 5px 25px;
+  }
 }
 
 .more a {

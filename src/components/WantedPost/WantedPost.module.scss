@@ -7,6 +7,12 @@
   background: #fff;
 }
 
+@media screen and (max-width: 768px) {
+  .wanted {
+    padding-right: 10px;
+  }
+}
+
 .wanted a {
   position: absolute;
   top: 0;
