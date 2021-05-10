@@ -24,7 +24,7 @@ const Home = () => {
         <h1>
           Welcome to a world where
           <br />
-          everything is free.
+          everything is shared.
         </h1>
       </header>
 
