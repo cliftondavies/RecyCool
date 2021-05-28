@@ -1,3 +1,7 @@
+.items {
+  min-height: calc(100vh - 58.5px);
+}
+
 .items header {
   height: 182px;
   background: url('../../assets/geometric-map.jpg') no-repeat center bottom/100%;
